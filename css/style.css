@@ -1,0 +1,670 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ol,ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  display: inline-block;
+}
+
+img{
+  vertical-align: middle;
+}
+
+.container{
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.d-flex{
+  display: flex;
+}
+
+.f-wrap{
+  flex-wrap: wrap;
+}
+
+.jcc{
+  justify-content: center;
+}
+
+.jcs{
+  justify-content: flex-start;
+}
+
+.jce{
+  justify-content: flex-end;
+}
+
+.jcsb{
+  justify-content: space-between;
+}
+
+.jcse{
+  justify-content: space-evenly;
+}
+
+.tac{
+  text-align: center;
+}
+
+.tar{
+  text-align: right;
+}
+
+.tal{
+  text-align: left;
+}
+
+.w-100{
+  width: 100%;
+}
+
+.mw-100{
+  max-width: 100%;
+}
+
+:root{
+  --shada: #ffffff;
+  --hover: #28b8d8;
+  --head: #444444;
+  --pera: #666666;
+  --con: 'Roboto Condensed', sans-serif;
+  --slab: 'Roboto Slab', serif;
+  --roboto: 'Roboto', sans-serif;
+}
+
+/*==============================================================================
+                                Common css end
+==============================================================================*/
+
+
+
+
+
+
+/*==============================================================================
+                            Menu part start
+==============================================================================*/
+#menu{
+  padding: 27px 0 22px;
+  background: rgba(0, 0, 0, 0.44);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.menu_logo{
+  width: 20%;
+}
+
+.main_menu{
+  width: 70%;
+}
+
+.menu_icon{
+  width: 10%;
+  position: relative;
+}
+.menu_icon a{
+  margin-left: 10px;
+  color: var(--shada);
+  font-size: 12px;
+  transition: all linear .3s;
+  -moz-transition: all linear .3s;
+  -ms-transition: all linear .3s;
+  -o-transition: all linear .3s;
+  -webkit-transition: all linear .3s;
+}
+
+.menu_icon a:hover{
+  color: var(--hover);
+}
+
+.menu_icon::after {
+	position: absolute;
+	content: '';
+	width: 1px;
+	height: 30px;
+	left: 8px;
+	top: -5px;
+	background: #3b3942;
+}
+
+.main_menu ul li a{
+  color: var(--shada);
+  font-size: 14px;
+  font-weight: 700;
+  font-family: var(--con);
+  text-transform: uppercase;
+  margin-right: 34px;
+  transition: all linear .3s;
+  -moz-transition: all linear .3s;
+  -ms-transition: all linear .3s;
+  -o-transition: all linear .3s;
+  -webkit-transition: all linear .3s;
+}
+
+.main_menu ul li a:hover{
+  color: var(--hover);
+}
+
+
+.main_menu ul li:last-child{
+  margin-right: -21px;
+}
+
+/*==============================================================================
+                            Menu part end
+==============================================================================*/
+
+
+/*==============================================================================
+                            Banner part start
+==============================================================================*/
+#banner{
+  padding: 253px 0 198px;
+}
+
+.banner_txt h1{
+  color: var(--shada);
+  font-size: 50px;
+  font-weight: 700;
+  font-family: var(--con);
+  text-transform: uppercase;
+  margin-top: 3px;
+}
+
+.banner_txt h3{
+  color: var(--shada);
+  font-size: 40px;
+  font-weight: 300;
+  font-family: var(--slab);
+  text-transform: uppercase;
+  margin-top: -10px;
+}
+
+.banner_txt p{
+  color: var(--shada);
+  font-size: 14px;
+  font-weight: 300;
+  font-family: var(--slab);
+}
+/*==============================================================================
+                            Banner part end
+==============================================================================*/
+
+
+
+/*==============================================================================
+                            Service part start
+==============================================================================*/
+#service{
+  padding-top: 56px;
+  padding-bottom: 64px;
+  background: #f9f9f9;
+}
+
+.service_head h2{
+  font-size: 30px;
+  font-weight: 300;
+  font-family: var(--slab);
+  color: var(--head);
+  margin-bottom: 15px;
+}
+
+.service_head p{
+  font-size: 14px;
+  font-weight: 400;
+  font-family: var(--roboto);
+  color: var(--pera);
+}
+
+.serve_col{
+  width: 32%;
+  border: 1px solid #e3e3e3;
+  padding: 16px;
+}
+
+.serve_inner_head h3{
+  padding: 62px 0 20px;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: var(--con);
+  color: var(--head);
+  text-transform: uppercase;
+}
+
+.serve_col .serve_txt h4{
+  font-size: 17px;
+  font-weight: 700;
+  font-family: var(--slab);
+  color: var(--head);
+  padding-top: 16px;
+}
+
+.serve_col .serve_txt p{
+  font-size: 14px;
+  font-weight: 400;
+  font-family: var(--roboto);
+  color: var(--pera);
+  padding-top: 5px;
+  line-height: 19px;
+}
+/*==============================================================================
+                            Service part end
+==============================================================================*/
+
+
+/*==============================================================================
+                            Instagram part start
+==============================================================================*/
+#insta{
+  padding: 80px 0 64px;
+  background: #2c2c2c;
+}
+.insta_col{
+  width: 24%;
+  padding-top: 20px;
+}
+.insta_head h3{
+  font-size: 18px;
+  font-weight: 400;
+  font-family: var(--con);
+  color: #d5d5d5;
+  text-transform: uppercase;
+  display: inline-block;
+  position: relative;
+}
+
+.insta_head h3::after {
+	position: absolute;
+	content: '';
+	top: 9px;
+	left: -112px;
+	width: 100px;
+	height: 1px;
+	background: #535353;
+}
+
+.insta_head h3::before {
+	position: absolute;
+	content: '';
+	bottom: 9px;
+	left: -112px;
+	width: 100px;
+	height: 1px;
+	background: #535353;
+}
+
+.insta_head{
+  position: relative;
+}
+
+.insta_head::after {
+	position: absolute;
+	content: '';
+	top: 9px;
+	right: 546px;
+	width: 100px;
+	height: 1px;
+	background: #535353;
+}
+
+.insta_head::before {
+	position: absolute;
+	content: '';
+	bottom: 9px;
+	right: 546px;
+	width: 100px;
+	height: 1px;
+	background: #535353;
+}
+
+.insta_btn a{
+  padding: 16px 20px;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: var(--roboto);
+  color: #a6a6a6;
+  text-transform: uppercase;
+  border: 1px solid #797979;
+  margin-top: 40px;
+  transition: all linear .3s;
+  -moz-transition: all linear .3s;
+  -ms-transition: all linear .3s;
+  -o-transition: all linear .3s;
+  -webkit-transition: all linear .3s;
+}
+
+.insta_btn a:hover{
+  color: var(--hover);
+  border-color: var(--hover);
+}
+
+
+/*==============================================================================
+                            Instagram part end
+==============================================================================*/
+
+
+/*==============================================================================
+                            Journal part start
+==============================================================================*/
+#journal{
+  padding: 58px 0;
+  background: #f9f9f9;
+}
+
+.journal_col{
+  width: 32%;
+  border: 1px solid #e3e3e3;
+  padding: 16px 0;
+  margin-top: 19px;
+}
+
+.journal_txt p span{
+  display: block;
+}
+
+.journal_txt a{
+	display: inline-block;
+	font-size: 11px;
+	font-weight: 400;
+	font-family: var(--roboto);
+	color: #999999;
+	text-transform: uppercase;
+	border-bottom: 1px solid var(--hover);
+  margin: 0 172px 5px 14.8px;
+  transition: all linear .3s;
+  -moz-transition: all linear .3s;
+  -ms-transition: all linear .3s;
+  -o-transition: all linear .3s;
+  -webkit-transition: all linear .3s;
+}
+
+.journal_txt a:hover{
+  color: var(--hover);
+}
+
+
+.journal_txt .heart{
+  display: inline-block;
+}
+
+.journal_txt .heart i{
+cursor: pointer;
+transition: all linear .3s;
+}
+
+.journal_txt .heart i:hover{
+  color: red;
+}
+
+
+.journal_head h3{
+  font-size: 18px;
+  font-weight: 700;
+  font-family: var(--con);
+  color: var(--head);
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+}
+
+.journal_head h3::after {
+	position: absolute;
+	content: '';
+	top: 9px;
+	left: -112px;
+	width: 100px;
+	height: 1px;
+	background: #d9d9d9;
+}
+
+.journal_head h3::before {
+	position: absolute;
+	content: '';
+	bottom: 9px;
+	left: -112px;
+	width: 100px;
+	height: 1px;
+	background: #d9d9d9;
+}
+
+.journal_head{
+  position: relative;
+}
+
+.journal_head::after {
+	position: absolute;
+	content: '';
+	top: 9px;
+	right: 396px;
+	width: 100px;
+	height: 1px;
+	background: #d9d9d9;
+}
+
+.journal_head::before {
+	position: absolute;
+	content: '';
+	bottom: 9px;
+	right: 396px;
+	width: 100px;
+	height: 1px;
+	background: #d9d9d9;
+}
+
+.journal_col h3{
+  color: var(--head);
+  font-size: 17px;
+  font-weight: 700;
+  font-family: var(--slab);
+}
+
+.journal_col p{
+  color: #999999;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: var(--roboto);
+  padding: 5px 0 14px;
+}
+
+.journal_col .journal_txt p{
+  color: #999999;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: var(--roboto);
+  padding: 17px 20px 0;
+}
+/*==============================================================================
+                            Journal part end
+==============================================================================*/
+
+
+/*==============================================================================
+                            About part start
+==============================================================================*/
+#about{
+  background: #f9f9f9;
+  padding-bottom: 80px;
+}
+
+.about_col{
+  width: 49%;
+}
+
+.about_img{
+  width: 35%;
+}
+
+.about_txt{
+  width: 65%;
+  padding-left: 15px;
+}
+
+.about_col h3{
+  font-size: 18px;
+  font-weight: 700;
+  font-family: var(--con);
+  color: var(--head);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  display: inline-block;
+  position: relative;
+}
+
+.about_col h3::after {
+	position: absolute;
+	content: '';
+	top: 9px;
+	right: -113px;
+	width: 100px;
+	height: 1px;
+	background: #d9d9d9;
+}
+
+.about_col h3::before {
+	position: absolute;
+	content: '';
+	bottom: 9px;
+	right: -113px;
+	width: 100px;
+	height: 1px;
+	background: #d9d9d9;
+}
+
+.about_txt p{
+  font-size: 18px;
+  font-weight: 300;
+  font-family: var(--slab);
+  color: var(--pera);
+}
+
+.about_txt p span{
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: var(--roboto);
+  color: var(--pera);
+  margin-top: 15px;
+  line-height: 22px;
+}
+
+.inner_txt h4{
+  font-size: 17px;
+  font-weight: 700;
+  font-family: var(--slab);
+  color: var(--head);
+  padding-bottom: 10px;
+}
+
+.inner_txt p{
+  font-size: 14px;
+  font-weight: 400;
+  font-family: var(--roboto);
+  color: var(--pera);
+  padding-bottom: 18px;
+  padding-right: 40px;
+  line-height: 20px;
+}
+
+.inner_icon{
+  width: 12%;
+}
+
+.inner_txt{
+  width: 88%;
+}
+/*==============================================================================
+                            About part end
+==============================================================================*/
+
+
+/*==============================================================================
+                            Footer part start
+==============================================================================*/
+.footer_top{
+  padding: 50px 0;
+  background: #373737;
+}
+
+.footer_bottom{
+  padding: 30px 0;
+  background: #333333;
+}
+
+.footer_bottom p{
+  font-size: 14px;
+  font-weight: 400;
+  font-family: var(--roboto);
+  color: #cacaca;
+}
+
+.footer_col{
+  width: 22%;
+}
+
+.footer_cmn_head h2{
+  font-size: 16px;
+  font-weight: 700;
+  font-family: var(--con);
+  color: #f0f0f0;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.footer_col p{
+  font-size: 14px;
+  font-weight: 400;
+  font-family: var(--roboto);
+  color: #cacaca;
+  line-height: 21px;
+}
+
+.banchu{
+  font-size: 11px;
+  font-weight: 300;
+  font-family: var(--slab);
+  color: var(--hover);
+}
+
+.pera1 p span{
+  display: block;
+}
+
+.foot_icon{
+  width: 13%;
+}
+
+.icon2{
+  padding-top: 23px;
+}
+
+.foot_pera{
+  width: 87%;
+}
+
+.foot_inner{
+  padding-top: 23px;
+}
+
+.footer_col p span{
+  display: block;
+  padding-top: 20px;
+}
+
+
+/*==============================================================================
+                            Footer part end
+==============================================================================*/
